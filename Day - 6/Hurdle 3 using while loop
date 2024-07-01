@@ -1,0 +1,26 @@
+def go_left():
+    turn_left()
+    move()
+    
+def move_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def go_right():
+    move_right()
+    move()
+
+def jump():
+    go_left()
+    go_right()
+    go_right()
+    turn_left()
+
+while True:
+    if wall_in_front():
+        jump()
+    elif at_goal():
+        break
+    else:
+        move()
