@@ -1,0 +1,19 @@
+def go_left():
+    turn_left()
+    move()
+    
+def move_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def go_right():
+    move_right()
+    move()
+
+for i in range(1,7):
+    move()
+    go_left()
+    go_right()
+    go_right()
+    turn_left()
